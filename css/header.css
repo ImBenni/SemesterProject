@@ -1,0 +1,62 @@
+header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5% 3%;
+    z-index: 500;
+}
+
+header a{
+    color: white;
+    text-decoration: none;
+    font-size: 1.3vw;
+    font-weight: 300;
+}
+
+.logo{
+    width: 4.5%
+}
+
+
+
+nav{
+    /* background-color: red; */
+    width: 70%;
+    position: relative;
+    right: 9%;
+    
+}
+
+nav ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    list-style: none;
+}
+
+nav li{
+    /* background-color:blueviolet; */
+    /* width: 30%; */
+    margin-right: 4%;
+}
+
+nav a{
+    /* background-color: blue; */
+}
+
+.header-search img{
+    width: 15%;
+    margin-right: 2px;
+}
+
+header a:hover{
+    color: rgb(224, 224, 224);
+}
+@media screen and (max-width: 800px) {
+    header a{
+        font-size: 2vw;
+    }
+}
+
+

@@ -1,0 +1,30 @@
+footer{
+    background-color: var(--light-background);
+    color: var(--dark-background);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+footer h2{
+    font-weight: 800;
+}
+
+footer h3{
+    font-weight: 400;
+}
+
+@media screen and (max-width: 800px) {
+    footer h2{
+        font-size: 3vw;
+    }
+    footer h3{
+        font-size: 2vw;
+    }
+    footer input{
+        width: 50%;
+        height: auto;
+    }
+}
