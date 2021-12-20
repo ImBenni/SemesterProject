@@ -1,0 +1,196 @@
+body {
+  grid-template-rows: auto 1000px auto;
+  grid-template-columns: auto 1fr auto;
+  /* height: 2000px; */
+}
+
+.banner-content {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+
+.first-banner {
+  background-color: var(--light-background);
+  height: 100%;
+}
+
+.first-shape {
+  display: block;
+  position: absolute;
+
+  background-image: url(../images/news-big.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+
+  width: 100%;
+  height: 80%;
+  bottom: 0;
+  right: 0;
+}
+
+.second-shape {
+  display: block;
+  position: absolute;
+
+  background-image: url(../images/news-small.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+
+  width: 100%;
+  height: 50%;
+  bottom: 0;
+  right: 0;
+}
+
+.card-content {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-around;
+  z-index: 200;
+  margin: 3% 0;
+  width: 100%;
+}
+
+.first-card {
+  background-color: #85c6e8;
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+  text-align: center;
+  border-radius: 30px;
+}
+
+.first-card h1 {
+  background-color: var(--main-theme);
+  padding: 3% 3%;
+  position: relative;
+  bottom: 20px;
+  font-size: 1.3vw;
+}
+
+.first-card h2 {
+  position: relative;
+  bottom: 20px;
+  color: var(--darker-shade);
+  font-weight: 400;
+  font-size: 1.2vw;
+  padding: 0 4%;
+  text-align: left;
+}
+
+.second-card {
+  background-color: #85c6e8;
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+  text-align: center;
+  border-radius: 30px;
+}
+
+.second-card h1 {
+  background-color: var(--main-theme);
+  padding: 3% 3%;
+  position: relative;
+  bottom: 20px;
+  font-size: 1.3vw;
+}
+
+.second-card h2 {
+  position: relative;
+  bottom: 20px;
+  color: var(--darker-shade);
+  font-weight: 400;
+  font-size: 1.2vw;
+  padding: 0 4%;
+  text-align: left;
+}
+
+.third-card {
+  background-color: #85c6e8;
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+  text-align: center;
+  border-radius: 30px;
+}
+
+.third-card h1 {
+  background-color: var(--main-theme);
+  padding: 3% 3%;
+  position: relative;
+  bottom: 20px;
+  font-size: 1.3vw;
+}
+
+.third-card h2 {
+  position: relative;
+  bottom: 20px;
+  color: var(--darker-shade);
+  font-weight: 400;
+  font-size: 1vw;
+  padding: 0 4%;
+  text-align: left;
+}
+
+@media screen and (min-width: 2000px) {
+    body {
+        grid-template-rows: auto 1500px auto;
+
+      }
+}
+
+@media screen and (max-width: 800px) {
+  body {
+    grid-template-rows: auto 100% auto;
+  }
+
+  .card-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .first-card {
+    margin: 2%;
+    width: 60%;
+    border-radius: 10px;
+  }
+
+  .first-card h1 {
+    font-size: 3vw;
+  }
+
+  .first-card h2 {
+    font-size: 2.5vw;
+  }
+
+  .second-card {
+    margin: 2%;
+    width: 60%;
+    border-radius: 10px;
+  }
+
+  .second-card h1 {
+    font-size: 3vw;
+  }
+
+  .second-card h2 {
+    font-size: 2.5vw;
+  }
+  .third-card {
+    margin: 2%;
+    width: 60%;
+    border-radius: 10px;
+  }
+
+  .third-card h1 {
+    font-size: 3vw;
+  }
+
+  .third-card h2 {
+    font-size: 2.3vw;
+  }
+}

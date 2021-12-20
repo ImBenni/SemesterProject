@@ -1,0 +1,196 @@
+body {
+    grid-template-rows: auto 2900px 8%;
+    grid-template-columns: auto 1fr auto;
+    /* height: 100%; */
+  }
+  
+  main {
+    display: grid;
+    /* height: 100%; */
+    grid-template-rows: auto auto auto;
+    grid-template-areas:
+      "first first first"
+      "second second second"
+      "third third third";
+  }
+  
+  .banner-content {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    position: relative;
+   
+  }
+  
+  .first-banner {
+    grid-area: first;
+    background-color: var(--main-shade);
+    height: 100%;
+  }
+  
+  .first-content {
+    flex: 1;
+    position: absolute;
+    left: 49%;
+    right: 8%;
+    top: 2%;
+    bottom: 0;
+    z-index: 100;
+  }
+  
+  .first-banner img {
+    flex: 0.3;
+    margin: 3% 0 5% 5%;
+    width: auto;
+    height: 28vw;
+    border-color: white;
+    border-style: solid;
+    border-width: 5px;
+    box-shadow: 3px 4px 10px black;
+    z-index: 200;
+  }
+  
+  .first-shape {
+      display: block;
+      position: absolute;
+    
+      background-image: url(../images/explore-first.svg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: left;
+    
+      width: 100%;
+      height: 20%;
+      bottom: 0;
+      right: 0;
+      
+    }
+  
+  .second-banner {
+    grid-area: second;
+    background-color: var(--main-second-shade);
+    height: 100%;
+  }
+  
+  .second-content {
+      flex: 1;
+      position: relative;
+      left: 3%;
+      right: 0%;
+      top: 2%;
+      bottom: 0;
+      z-index: 100;
+    }
+    
+    .second-banner img {
+      flex: 0.3;
+      margin: 3% 5% 5% 5%;
+      width: auto;
+      height: 32vw;
+      border-color: white;
+      border-style: solid;
+      border-width: 5px;
+      box-shadow: 3px 4px 10px black;
+      z-index: 200;
+    }
+  
+    .second-shape {
+      display: block;
+      position: absolute;
+    
+      background-image: url(../images/explore-second.svg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: left;
+    
+      width: 100%;
+      height: 20%;
+      bottom: 0;
+      right: 0;
+    }
+  
+  .third-banner {
+    grid-area: third;
+    background-color: var(--main-theme);
+    height: 100%;
+  }
+  
+  .third-banner img {
+    height: 60%;
+  }
+  
+  .third-content {
+      flex: 1;
+      position: absolute;
+      left: 51%;
+      right: 5%;
+      top: 2%;
+      bottom: 0;
+      z-index: 100;
+    }
+    
+    .third-banner img {
+      flex: 0.3;
+      margin: 3% 0 3% 5%;
+      width: auto;
+      height: 30vw;
+      border-color: white;
+      border-style: solid;
+      border-width: 5px;
+      box-shadow: 3px 4px 10px black;
+    }
+  
+  .text-content {
+    margin-left: 5%;
+  }
+  
+  .text-content h1 {
+    color: var(--darker-shade);
+    font-size: 2.5vw;
+  }
+  
+  .text-content h3 {
+    font-size: 1.3vw;
+    font-weight: 300;
+  }
+  
+  @media screen and (max-width: 1300px) {
+      body {
+          grid-template-rows: auto 1800px 8%;
+        }
+  }
+  
+  
+  @media screen and (max-width: 1000px) {
+      body {
+          grid-template-rows: auto 1200px 8%;
+        }
+  }
+  
+  @media screen and (max-width: 800px) {
+      body {
+          grid-template-rows: auto 1000px 8%;
+        }
+  
+        .text-content h1 {
+          font-size: 1.5rem;
+        }
+        
+        .text-content h3 {
+          font-size: .6rem;
+        }
+  }
+  
+  @media screen and (max-width: 500px) {
+      body {
+          grid-template-rows: auto 1000px 8%;
+        }
+  
+        .text-content h1 {
+          font-size: 1.5rem;
+        }
+        
+        .text-content h3 {
+          font-size: .5rem;
+        }
+  }
