@@ -174,6 +174,10 @@ main {
     right: 0;
   }
 
+  .exhibition a{
+    color: black
+  }
+
   @media screen and (max-width: 1300px) {
     .first-content .text-content h1{
         font-size: 2rem;

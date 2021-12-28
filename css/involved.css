@@ -154,6 +154,10 @@ body {
     font-weight: 300;
   }
   
+  .involved a{
+    color: black
+  }
+
   @media screen and (max-width: 1300px) {
       body {
           grid-template-rows: auto 1800px 8%;

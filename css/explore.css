@@ -154,6 +154,10 @@ main {
   font-weight: 300;
 }
 
+.explore a{
+  color: black
+}
+
 @media screen and (min-width: 2200px) {
   body {
     grid-template-rows: auto 3200px 8%;

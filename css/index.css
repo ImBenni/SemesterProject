@@ -186,6 +186,10 @@ main {
   background-position: left top;
 }
 
+.index a{
+  color: black
+}
+
 @media screen and (max-width: 800px) {
   body {
     display: grid;

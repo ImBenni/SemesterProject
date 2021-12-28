@@ -136,6 +136,10 @@ body {
   text-align: left;
 }
 
+.news a{
+  color: black
+}
+
 @media screen and (min-width: 2000px) {
     body {
         grid-template-rows: auto 1500px auto;
